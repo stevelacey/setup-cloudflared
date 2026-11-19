@@ -56,7 +56,7 @@ runs:
         version: ${{ steps.version-windows.outputs.version }}
         
     - name: Install cloudflared on tool cache
-      uses: AnimMouse/tool-cache@v1
+      uses: stevelacey/tool-cache@v1
       with:
         folder_name: cloudflared
         cache_hit: ${{ steps.cache.outputs.cache-hit }}
